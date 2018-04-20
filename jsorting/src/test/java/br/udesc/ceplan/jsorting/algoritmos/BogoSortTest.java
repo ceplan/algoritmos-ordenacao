@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.udesc.ceplan.algoritmosordenacao.algoritmos;
+package br.udesc.ceplan.jsorting.algoritmos;
 
-import br.udesc.ceplan.algoritmosordenacao.utils.GeraVetor;
+import br.udesc.ceplan.jsorting.utils.GeraVetor;
 import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;

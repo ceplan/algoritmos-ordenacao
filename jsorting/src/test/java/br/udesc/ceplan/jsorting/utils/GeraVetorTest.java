@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.udesc.ceplan.algoritmosordenacao.utils;
+package br.udesc.ceplan.jsorting.utils;
 
 import java.util.Arrays;
 import org.junit.Test;

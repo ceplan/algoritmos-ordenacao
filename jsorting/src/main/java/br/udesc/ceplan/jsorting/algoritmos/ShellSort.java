@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package br.udesc.ceplan.algoritmosordenacao.algoritmos;
+package br.udesc.ceplan.jsorting.algoritmos;
 
-import br.udesc.ceplan.algoritmosordenacao.core.AbstractSort;
+import br.udesc.ceplan.jsorting.core.AbstractSort;
 
 /**
  * <p>

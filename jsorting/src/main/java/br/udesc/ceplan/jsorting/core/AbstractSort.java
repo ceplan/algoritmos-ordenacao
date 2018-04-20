@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package br.udesc.ceplan.algoritmosordenacao.core;
+package br.udesc.ceplan.jsorting.core;
 
 import java.util.Arrays;
 
