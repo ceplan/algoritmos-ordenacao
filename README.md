@@ -1,6 +1,6 @@
 # jSorting
 
-**jSorting** é um projeto orientado a objetos Java baseado em algoritmos de ordenação. Criado com o propósito de ensinar algoritmos de ordenação na disciplina de Estrutura de Dados-II.
+**jSorting** é um projeto de algoritmos de ordenação utilizando o conceito orientado a objetos baseado na linguagem de programação Java. Criado com o propósito de ensinar algoritmos de ordenação na disciplina de Estrutura de Dados-II.
 
 A versão atual é 1.0-SNAPSHOT. 
 
