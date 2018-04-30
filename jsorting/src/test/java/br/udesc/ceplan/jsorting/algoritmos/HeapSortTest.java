@@ -29,7 +29,7 @@ public class HeapSortTest {
         // Ordeno a cópia com uma ordenação do Java
         Arrays.sort(experado);
 
-        // Testo o RadixSort
+        // Testo o HeapSort
         HeapSort heapSort = new HeapSort(vetor);
         heapSort.sort();
 

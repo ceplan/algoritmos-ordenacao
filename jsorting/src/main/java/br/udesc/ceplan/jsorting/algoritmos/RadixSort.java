@@ -15,7 +15,6 @@
  */
 package br.udesc.ceplan.jsorting.algoritmos;
 import br.udesc.ceplan.jsorting.core.AbstractSort;
-
 /**
  *<p>O <b>Radix sort<b> é um algoritmo de ordenação rápido e estável que pode ser usado para ordenar itens que estão identificados por chaves únicas. 
 Cada chave é uma cadeia de caracteres ou número, e o radix sort ordena estas chaves em qualquer ordem relacionada com a lexicografia.
@@ -74,8 +73,7 @@ O algoritmo de ordenação radix foi originalmente usado para ordenar cartões p
  * 
  * @author Marcelo Wischniowski <marcelowisc at gmail.com>
  */
-public class RadixSort extends AbstractSort {
-    
+public class RadixSort extends AbstractSort {   
     /**
      * Construtor
      * @param vetor Vetor que será ordenado
@@ -83,8 +81,6 @@ public class RadixSort extends AbstractSort {
     public RadixSort(int[] vetor){
         super(vetor);
     };
-
-
     /**
      * Aplica a ordenação RadixSorte no vetor
      */
@@ -96,14 +92,11 @@ public class RadixSort extends AbstractSort {
             higher = vetor[0];
             int[] temp = new int[10];
 
-
             for (i = 1; i < length; i++)
                 if (vetor[i] > higher)
-                    higher = vetor[i];
-            
+                    higher = vetor[i];           
             while (higher / exp > 0){
-                int[] bucket = new int[10];
-     
+                int[] bucket = new int[10];    
                 for (i = 0; i < length; i++)
                     bucket[(vetor[i] / exp) % 10]++;
                 
@@ -117,7 +110,6 @@ public class RadixSort extends AbstractSort {
                     vetor[i] = temp[i];
                 
                 exp = exp * 10;        
-            }
-		
+            }		
 	}
 }

@@ -77,7 +77,10 @@ public class BucketSort extends AbstractSort {
           }
         }
     }
-    
+    /** 
+    * @param input 
+    * @return Retorna um array com hash de input 
+    */ 
     private int[] hash(int[] input) {
         int m = input[0];
             for (int i = 1; i < input.length; i++) {
@@ -87,7 +90,11 @@ public class BucketSort extends AbstractSort {
             }
         return new int[]{m, (int) Math.sqrt(input.length)};
     }
-    
+    /** 
+    * @param i 
+    * @param code 
+    * @return 
+    */
     private int hash(int i, int[] code) {
         return (int) ((double) i / code[0] * (code[1] - 1));
     }

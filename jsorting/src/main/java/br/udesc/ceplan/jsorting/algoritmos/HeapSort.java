@@ -15,7 +15,6 @@
  */
 package br.udesc.ceplan.jsorting.algoritmos;
 import br.udesc.ceplan.jsorting.core.AbstractSort;
-
 /**
  * 
  * <p>O algoritmo heapsort é um algoritmo de ordenação generalista, e faz parte da família de algoritmos de ordenação por seleção.
@@ -36,7 +35,6 @@ import br.udesc.ceplan.jsorting.core.AbstractSort;
  * @author Marcelo Wischniowski <marcelowisc at gmail.com>
  */
 public class HeapSort extends AbstractSort {
-
     /**
      * Construtor
      * @param vetor Vetor que será ordenado
@@ -44,20 +42,15 @@ public class HeapSort extends AbstractSort {
     public HeapSort(int[] vetor) {
         super(vetor);
     }
-
     /**
      * Aplica a ordenação HeapSorte no vetor
      */
     @Override
     public void sort() {
-
         for (int i =  vetor.length/ 2 - 1; i >= 0; i--){
             heapify(vetor, vetor.length, i);
-        }
-       
-        for (int i = vetor.length - 1; i>=0; i--)
-        {
-            
+        }      
+        for (int i = vetor.length - 1; i>=0; i--) {           
             int temp = vetor[0];
             vetor[0] = vetor[i];
             vetor[i] = temp;
@@ -65,28 +58,28 @@ public class HeapSort extends AbstractSort {
             heapify(vetor, i, 0);
         }
     }
-        void heapify(int arr[], int arrayLength, int rootElementIndex)
-    {
+    /**
+     * @param arr
+     * @param arrayLength
+     * @param rootElementIndex
+     */
+    public void heapify(int arr[], int arrayLength, int rootElementIndex) {
         
         int leftIndex = 2*rootElementIndex + 1;  
-        int rightIndex = 2*rootElementIndex + 2;  
-        
+        int rightIndex = 2*rootElementIndex + 2;         
         int largest = rootElementIndex;
        
         if (leftIndex < arrayLength && arr[leftIndex] > arr[largest])
             largest = leftIndex;
         
         if (rightIndex < arrayLength && arr[rightIndex] > arr[largest])
-            largest = rightIndex;
-        
-        if (largest != rootElementIndex){
-           
+            largest = rightIndex; 
+
+        if (largest != rootElementIndex){     
             int swap = arr[rootElementIndex];
             arr[rootElementIndex] = arr[largest];
-            arr[largest] = swap;
-            
+            arr[largest] = swap;          
             heapify(arr, arrayLength, largest);
         }
     }
-
 }

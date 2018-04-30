@@ -29,7 +29,7 @@ public class BucketSortTest {
         // Ordeno a cópia com uma ordenação do Java
         Arrays.sort(experado);
 
-        // Testo o RadixSort
+        // Testo o BucketSort
         BucketSort bucketSort = new BucketSort(vetor);
         bucketSort.sort();
 
