@@ -1,4 +1,4 @@
-# jSorting
+﻿# jSorting
 
 **jSorting** é um projeto de algoritmos de ordenação utilizando o conceito orientado a objetos baseado na linguagem de programação Java. Criado com o propósito de ensinar algoritmos de ordenação na disciplina de Estrutura de Dados-II.
 
@@ -14,3 +14,8 @@ Se você está interessado em contribuir com suas ideias e comentários, por fav
 ## Algoritmos
 - BogoSort
 - ShellSort
+- HeapSort
+
+- RadixSort
+
+- BucketSort
