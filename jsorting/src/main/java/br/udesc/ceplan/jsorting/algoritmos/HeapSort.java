@@ -43,7 +43,7 @@ public class HeapSort extends AbstractSort {
         super(vetor);
     }
     /**
-     * Aplica a ordenação HeapSorte no vetor
+     * Aplica a ordenação HeapSort no vetor
      */
     @Override
     public void sort() {
@@ -62,6 +62,10 @@ public class HeapSort extends AbstractSort {
      * @param arr
      * @param arrayLength
      * @param rootElementIndex
+     * heapify cria uma  Árvore Binária Completa.
+     * Se o nó pai for armazenado no índice rootElementIndex, o filho da esquerda pode ser calculado
+     * por 2 * rootElementIndex + 1 e filho da direita por 2 * rootElementIndex + 2 
+     *(assumindo que a indexação começa em 0).
      */
     public void heapify(int arr[], int arrayLength, int rootElementIndex) {
         

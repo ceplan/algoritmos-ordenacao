@@ -16,6 +16,7 @@
 package br.udesc.ceplan.jsorting.algoritmos;
 import br.udesc.ceplan.jsorting.core.AbstractSort;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -56,12 +57,13 @@ public class BucketSort extends AbstractSort {
     public void sort() {
 
         final int[] code = hash(vetor);
-
+        System.out.println(Arrays.toString(code));
+        // criar e inicializa buckets
         List<Integer>[] buckets = new List[code[1]];
         for (int i = 0; i < code[1]; i++) {
           buckets[i] = new ArrayList<Integer>();
         }
-
+        // distribuir dados em buckets
         for (int i : vetor) {
           buckets[hash(i, code)].add(i);
         }
@@ -78,8 +80,8 @@ public class BucketSort extends AbstractSort {
         }
     }
     /** 
-    * @param input 
-    * @return Retorna um array com hash de input 
+    * @param input Vetor 
+    * @return array contendo hash de input
     */ 
     private int[] hash(int[] input) {
         int m = input[0];
@@ -91,9 +93,9 @@ public class BucketSort extends AbstractSort {
         return new int[]{m, (int) Math.sqrt(input.length)};
     }
     /** 
-    * @param i 
-    * @param code 
-    * @return 
+    * @param i Index atual
+    * @param code Array
+    * @return Retorna Hash para o Index atual
     */
     private int hash(int i, int[] code) {
         return (int) ((double) i / code[0] * (code[1] - 1));
